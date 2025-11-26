@@ -14,8 +14,6 @@ spec:
       labels:
         app: sum
     spec:
-      imagePullSecrets:
-      - name: repo-key
       containers:
       - name: sumserver
         image: clrmbxs/sum
@@ -55,8 +53,6 @@ spec:
       labels:
         app: sub
     spec:
-      imagePullSecrets:
-        - name: repo-key
       containers:
       - name: subserver
         image: clrmbxs/sub
@@ -96,8 +92,6 @@ spec:
       labels:
         app: mul
     spec:
-      imagePullSecrets:
-        - name: repo-key
       containers:
       - name: mulserver
         image: clrmbxs/mul
@@ -137,8 +131,6 @@ spec:
       labels:
         app: div
     spec:
-      imagePullSecrets:
-        - name: repo-key
       containers:
       - name: divserver
         image: clrmbxs/div
@@ -178,8 +170,6 @@ spec:
       labels:
         app: calculator
     spec:
-      imagePullSecrets:
-        - name: repo-key
       containers:
       - name: calculatorserver
         image: clrmbxs/calculator
